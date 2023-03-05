@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/styles.css">
+
+    <title>Document</title>
+</head>
+
+<!-- body of the document -->
+<body>
+    <!-- header not on main page cuz we too cool for that shit -->
+
+    <header id="video">
+        <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
+        <div class="overlay"></div>
+      
+        <!-- The HTML5 video element that will create the background video on the header -->
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+          <source src="../vid/mycashiervideo.mp4#t=15,200" type="video/mp4">
+          <!-- use that #15, 200 to choose start end time for the video playback -->
+        </video>
+
+        <script>
+            document.querySelector('video').playbackRate = 0.80;
+            //set playback speed/rate to 0.85
+        </script>
+      
+        <!-- The header content -->
+        <div class="container h-100 banner-content">
+          <div class="d-flex h-100 text-center align-items-center">
+            <div class="w-100 text-white">
+              <h1 class="VCPbanner">VCP Enterprises</h1>
+              <p class="lead mb-0">We specialize in Excellence</p>
+              <br/>
+              <button type="button" class="btn btn-outline-primary btn-lg font-weight-bold">MyCashier</button>
+              <button type="button" class="btn btn-outline-dark btn-lg font-weight-bold" onclick="location.href = './about.html'">Learn More</button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+
+      <!-- bouncy arrow that so many websites have -->
+      <div class="arrow bounce">
+        <!-- that long ass thins is the code for an svg arrow its probably better to download the svg and import it here with an img tag -->
+        <!-- so in true vcp fashion I did it the hard way -->
+        <svg fill="#000000" height="100px" width="100px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"></path> </g></svg>
+      </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- bootstrap js NO HTML BELOW THIS POINT SCRIPTS ONLY!!! -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- jquery js-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- custom js files go here: -->
+    <script src="../scripts/inject.js"></script>
+
+</body>
+</html>
