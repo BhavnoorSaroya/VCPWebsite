@@ -9,6 +9,7 @@
     min-height: 25rem;
     width: 100%;
     overflow: hidden;
+    
   }
   
   #video video {
@@ -46,7 +47,7 @@
 
 
   .VCPbanner{
-    font-size: 600%;
+    font-size: 300%;
   }
 
   .banner-content{
