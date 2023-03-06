@@ -5,19 +5,19 @@
 #video {
     position: relative;
     background-color: black;
-    height: 75vh;
-    min-height: 25rem;
+    height: 60vh;
+    min-height: 28rem;
     width: 100%;
     overflow: hidden;
-    
+    bottom: 5vh;
   }
   
   #video video {
     position: absolute;
-    top: 50%;
+    top: 25%;
     left: 50%;
     min-width: 110%;
-    min-height: 150%;
+    min-height: 100%;
     width: auto;
     height: auto;
     z-index: 0;
@@ -25,11 +25,13 @@
     -moz-transform: translateX(-50%) translateY(-40%);
     -webkit-transform: translateX(-50%) translateY(-40%);
     transform: translateX(-50%) translateY(-40%);
+    bottom: 5vh;
   }
   
   #video .container {
     position: relative;
     z-index: 2;
+    bottom: 5vh;
   }
   
   #video .overlay {
@@ -41,6 +43,7 @@
     background-color: black;
     opacity: 0.5;
     z-index: 1;
+    bottom: 5vh;
   }
 
   
@@ -62,9 +65,12 @@
     color: white; text-decoration: none;
 }
 
+
+
 .arrow {
   text-align: center;
   margin: 8% 0;
+
 }
 .bounce {
   -moz-animation: bounce 2s infinite;
