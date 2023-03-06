@@ -96,4 +96,7 @@ body{
   background-color: azure;
 }
 
-
+/* smooth scroll effect across all pages*/
+html {
+  scroll-behavior: smooth;
+}
